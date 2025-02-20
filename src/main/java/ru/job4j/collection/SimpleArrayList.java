@@ -69,7 +69,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
         };
     }
 
-    public void growUpCapacity() {
+    private void growUpCapacity() {
         int oldCapacity = container.length;
         if (oldCapacity == 0) {
             container = Arrays.copyOf(container, 1);
