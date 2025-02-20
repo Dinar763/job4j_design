@@ -12,9 +12,8 @@ public class SimpleArrayList<T> implements SimpleList<T> {
         container = (T[]) new Object[capacity];
     }
 
-
     @Override
-    public void add (T value) {
+    public void add(T value) {
         growUpCapacity();
         container[size++] = value;
         modCount++;
@@ -77,11 +76,5 @@ public class SimpleArrayList<T> implements SimpleList<T> {
         } else if (oldCapacity == size) {
             container = Arrays.copyOf(container, container.length * 2);
         }
-    }
-
-    public static void main(String[] args) {
-        SimpleList<Integer> list = list = new SimpleArrayList<>(3);
-        Iterator<Integer> iterator = list.iterator ();
-        System.out.println(iterator.hasNext());
     }
 }
