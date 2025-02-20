@@ -1,6 +1,5 @@
 package ru.job4j.collection;
 
-import java.awt.*;
 import java.util.*;
 
 public class SimpleArrayList<T> implements SimpleList<T> {
@@ -15,7 +14,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
 
 
     @Override
-    public void add(T value) {
+    public void add (T value) {
         growUpCapacity();
         container[size++] = value;
         modCount++;
@@ -82,7 +81,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
 
     public static void main(String[] args) {
         SimpleList<Integer> list = list = new SimpleArrayList<>(3);
-        Iterator<Integer> iterator = list.iterator();
+        Iterator<Integer> iterator = list.iterator ();
         System.out.println(iterator.hasNext());
     }
 }
