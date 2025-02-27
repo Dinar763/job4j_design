@@ -23,7 +23,7 @@ public class SimpleArraySet<T> implements SimpleSet<T> {
         Iterator<T> iterator = set.iterator();
         while (iterator.hasNext()) {
             T elem = iterator.next();
-            if (Objects.equals(elem, value)){
+            if (Objects.equals(elem, value)) {
                 flag = true;
                 break;
             }
