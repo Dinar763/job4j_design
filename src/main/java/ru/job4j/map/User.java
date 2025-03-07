@@ -44,11 +44,11 @@ public class User {
         int bucket2 = hash2 & 15;
         map.put(user1, new Object());
         map.put(user2, new Object());
-//        System.out.printf("user1 - хэшкод: %s, хэш: %s, бакет: %s",
-//            hashcode1, hash1, bucket1);
-//        System.out.printf("user2 - хэшкод: %s, хэш: %s, бакет: %s",
-//            hashcode2, hash2, bucket2);
-//        System.out.println(Objects.equals(user1, user2));
+        System.out.printf("user1 - хэшкод: %s, хэш: %s, бакет: %s",
+            hashcode1, hash1, bucket1);
+        System.out.printf("user2 - хэшкод: %s, хэш: %s, бакет: %s",
+            hashcode2, hash2, bucket2);
+        System.out.println(Objects.equals(user1, user2));
         System.out.println(map);
     }
 }
