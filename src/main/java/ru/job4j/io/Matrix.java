@@ -16,7 +16,7 @@ public class Matrix {
 
         String fileName = "data/matrix_output.txt";
 
-        try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))){
+        try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))) {
             for (int[] val: matrix) {
                 for (int val1: val) {
                     writer.printf("%" + size  + "d", val1);
@@ -27,8 +27,6 @@ public class Matrix {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public static void main(String[] args) {
