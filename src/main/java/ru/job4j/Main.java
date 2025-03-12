@@ -13,7 +13,7 @@ public class Main {
         int flag = 0;
         for (int i = 0; i < count; i++) {
             arr[i] = Integer.parseInt(numbers[i]);
-            if (arr[i] > flag){
+            if (arr[i] > flag) {
                 flag = arr[i];
             }
         }
