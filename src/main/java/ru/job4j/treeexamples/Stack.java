@@ -1,4 +1,4 @@
-package ru.job4j.treeExamples;
+package ru.job4j.treeexamples;
 
 public interface Stack<T> {
     void push(T item);      //добавить элемент на вершину стека

@@ -1,5 +1,4 @@
-package ru.job4j.treeExamples;
-
+package ru.job4j.treeexamples;
 
 public class Main {
     public static void main(String[] args) {
