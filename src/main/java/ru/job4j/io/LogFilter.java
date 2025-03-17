@@ -20,7 +20,7 @@ public class LogFilter {
             String line;
             while ((line = input.readLine()) != null) {
                 String[] parts = line.split(" ");
-                if (parts[parts.length - 2].equals("404")) {
+                if ("404".equals(parts[parts.length - 2])) {
                     result.add(line);
                 }
             }
