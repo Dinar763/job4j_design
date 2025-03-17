@@ -15,7 +15,7 @@ public class Config {
     }
 
     public void load() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(this.path))){
+        try (BufferedReader reader = new BufferedReader(new FileReader(this.path))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith("#") || line.isEmpty()) {
