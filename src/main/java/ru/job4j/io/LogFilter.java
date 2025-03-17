@@ -5,10 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class LogFilter {
     private final String file;
@@ -35,7 +32,7 @@ public class LogFilter {
 
     public void saveTo(String out) {
         var data = filter();
-        try (PrintWriter output = new PrintWriter(out)){
+        try (PrintWriter output = new PrintWriter(out)) {
             data.forEach(output::println);
         } catch (IOException e) {
             e.printStackTrace();
