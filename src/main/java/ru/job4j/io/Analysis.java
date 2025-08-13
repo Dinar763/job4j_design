@@ -17,7 +17,7 @@ public class Analysis {
                 String[] parts = line.split(" ");
                 if (parts.length < 2) {
                     continue;
-                };
+                }
 
                 String status = parts[0];
                 String time = parts[1];
