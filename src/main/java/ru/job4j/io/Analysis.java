@@ -15,7 +15,9 @@ public class Analysis {
 
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String[] parts = line.split(" ");
-                if (parts.length < 2) continue;
+                if (parts.length < 2) {
+                    continue;
+                };
 
                 String status = parts[0];
                 String time = parts[1];
@@ -37,6 +39,7 @@ public class Analysis {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) {
         Analysis analysis = new Analysis();
         analysis.unavailable("data/server.log", "data/target.csv");
