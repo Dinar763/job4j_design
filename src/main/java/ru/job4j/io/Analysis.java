@@ -22,10 +22,10 @@ public class Analysis {
                 String status = parts[0];
                 String time = parts[1];
 
-                if (!isUnavailable && (status.equals("400") || status.equals("500"))) {
+                if (!isUnavailable && ("400".equals(status) || "500".equals(status))) {
                     isUnavailable = true;
                     startTime = time;
-                } else if (isUnavailable && (status.equals("200") || status.equals("300"))) {
+                } else if (isUnavailable && ("200".equals(status) || "300".equals(status))) {
                     writer.write(startTime + ";" + time + ";\n");
                     isUnavailable = false;
                 }
